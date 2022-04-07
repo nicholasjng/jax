@@ -27,10 +27,10 @@ http_archive(
 )
 
 # For development, one can use a local TF repository instead.
-# local_repository(
-#    name = "org_tensorflow",
-#    path = "tensorflow",
-# )
+local_repository(
+    name = "org_tensorflow",
+    path = "/Users/nicholasjunge/Workspaces/c++/tensorflow",
+)
 
 load("//third_party/pocketfft:workspace.bzl", pocketfft = "repo")
 pocketfft()
